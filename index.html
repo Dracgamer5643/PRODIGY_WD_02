@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADI-Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="clock-container">
+        <h1 class="head">ADI-StopWatch</h1>
+        <div class="clock-con">
+            <img src="clock.png" alt="Image" width="40%">
+            <div id="hour" class="hour"></div>
+            <div id="min" class="min"></div>
+            <div id="sec" class="sec"></div>
+        </div>
+    </div>
+
+    <div class="main-con">
+
+        <div class="digital-clock">
+            <h1 id="displayTime" class="time">00:00:00</h1>
+        </div>
+
+        <div class="words">
+            <h1 class="w1">Hour</h1>
+            <h1 class="w2">Min</h1>
+            <h1 class="w3">Sec</h1>
+        </div>
+
+        <div class="btn-container">
+            <button onclick="btn('start'), watchStart()" id="start" class="btn">Start</button>
+            <button onclick="btn('stop'), watchStop()" id="stop" class="btn">Stop</button>
+            <button onclick="btn('restart'), watchRestart()" id="restart" class="btn">Restart</button>
+            <button onclick="btn('laps'), showLaps()" id="laps" class="btn">Laps</button>
+        </div>
+
+        <div class="day-year">
+            <div id="currentDay"></div>
+            <div id="currentYear"></div>
+        </div>
+
+        <h1 class="heading">Laps</h1>
+
+        <div id="laps-con"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
